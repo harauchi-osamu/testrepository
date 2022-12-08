@@ -1,0 +1,1349 @@
+﻿"DeployProject"
+{
+"VSVersion" = "3:800"
+"ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
+"IsWebType" = "8:FALSE"
+"ProjectName" = "8:CrystalReportSetup"
+"LanguageId" = "3:1041"
+"CodePage" = "3:932"
+"UILanguageId" = "3:1041"
+"SccProjectName" = "8:"
+"SccLocalPath" = "8:"
+"SccAuxPath" = "8:"
+"SccProvider" = "8:"
+    "Hierarchy"
+    {
+        "Entry"
+        {
+        "MsmKey" = "8:_38D262D47D3F46D781A747FAA725E05D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4AC5E4603E074DCDBB4CD476F9A5CFDB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_38D262D47D3F46D781A747FAA725E05D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4AC5E4603E074DCDBB4CD476F9A5CFDB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+    }
+    "Configurations"
+    {
+        "Debug"
+        {
+        "DisplayName" = "8:Debug"
+        "IsDebugOnly" = "11:TRUE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:Debug\\CrystalReportSetup.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
+        }
+        "Release"
+        {
+        "DisplayName" = "8:Release"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:TRUE"
+        "OutputFilename" = "8:Release\\CrystalReportSetup.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:2"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 および x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x64"
+                    {
+                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (x64)"
+                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.x64"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x86"
+                    {
+                    "Name" = "8:Visual C++ \"14\" ランタイム ライブラリ (x86)"
+                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.x86"
+                    }
+                }
+            }
+        }
+    }
+    "Deployable"
+    {
+        "CustomAction"
+        {
+        }
+        "DefaultFeature"
+        {
+        "Name" = "8:DefaultFeature"
+        "Title" = "8:"
+        "Description" = "8:"
+        }
+        "ExternalPersistence"
+        {
+            "LaunchCondition"
+            {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_C258D49B33BE42C09B9110BA3432C012"
+                {
+                "Name" = "8:.NET Framework"
+                "Message" = "8:[VSDNETMSG]"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.7.2"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=671728"
+                }
+            }
+        }
+        "File"
+        {
+        }
+        "FileType"
+        {
+        }
+        "Folder"
+        {
+            "{1525181F-901A-416C-8A58-119130FE478E}:_784F2583B54A4B03AE9B4CC9DA5F63CA"
+            {
+            "Name" = "8:#1919"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:ProgramMenuFolder"
+                "Folders"
+                {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_B90B4B6DF6EE44B3ADCAD8210D65406C"
+            {
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_F596C21A3092459FA23C104648A01564"
+            {
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "Name" = "8:#1925"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:TARGETDIR"
+                "Folders"
+                {
+                }
+            }
+        }
+        "LaunchCondition"
+        {
+        }
+        "Locator"
+        {
+        }
+        "MsiBootstrapper"
+        {
+        "LangId" = "3:1041"
+        "RequiresElevation" = "11:FALSE"
+        }
+        "Product"
+        {
+        "Name" = "8:Microsoft Visual Studio"
+        "ProductName" = "8:CrystalReportSetup"
+        "ProductCode" = "8:{21A69E02-D1AB-4B55-B19E-0DAAC26F840A}"
+        "PackageCode" = "8:{7FF945EB-EA0C-48D3-92A9-44BBDDFB2430}"
+        "UpgradeCode" = "8:{F74AF71C-E7E3-4738-957D-0A2DD64E9297}"
+        "AspNetVersion" = "8:4.0.30319.0"
+        "RestartWWWService" = "11:FALSE"
+        "RemovePreviousVersions" = "11:FALSE"
+        "DetectNewerInstalledVersion" = "11:TRUE"
+        "InstallAllUsers" = "11:FALSE"
+        "ProductVersion" = "8:1.0.0"
+        "Manufacturer" = "8:NCR"
+        "ARPHELPTELEPHONE" = "8:"
+        "ARPHELPLINK" = "8:"
+        "Title" = "8:CrystalReportSetup"
+        "Subject" = "8:"
+        "ARPCONTACT" = "8:Default Company Name"
+        "Keywords" = "8:"
+        "ARPCOMMENTS" = "8:"
+        "ARPURLINFOABOUT" = "8:"
+        "ARPPRODUCTICON" = "8:"
+        "ARPIconIndex" = "3:0"
+        "SearchPath" = "8:"
+        "UseSystemSearchPath" = "11:TRUE"
+        "TargetPlatform" = "3:0"
+        "PreBuildEvent" = "8:"
+        "PostBuildEvent" = "8:"
+        "RunPostBuildEvent" = "3:0"
+        }
+        "Registry"
+        {
+            "HKLM"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1C82FA5A9A1048F6B95C485B4F24077A"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_42F41864F7434DB8B19D7BCCF5A203B4"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCU"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A1B098909E3643E699D09AC0EC89CBEB"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D930B82F53A845C0A3FCDF48E0C0E617"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCR"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKPU"
+            {
+                "Keys"
+                {
+                }
+            }
+        }
+        "Sequences"
+        {
+        }
+        "Shortcut"
+        {
+        }
+        "UserInterface"
+        {
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_0B3C6D8A4660484D84BB5F9677C96246"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_15EE802341F448C5BAD543E2DA2699D1"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:1"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_D531AE05C106439E99D8822E960C4653"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:完了"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_193CDEDF77C5462BB3C322475D92B19C"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:2"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8BCA39E00C35444B84C884AC3DA830C6"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:インストール フォルダー"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C9948F40DA1E4FC294EC15F85184A9F5"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:インストールの確認"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E67070F695E144C986F733E7A271E68D"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:ようこそ"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_1A19D52D48AF4C3E8BC97B24E2643BB4"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:1"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_5043FB962EB345C1B29C83481216B6A3"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:インストールの確認"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F16CEBFA7C5A49C7AEF50832E24E162B"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:ようこそ"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F1A483012BD1441CAD159930964145CA"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:インストール フォルダー"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "InstallAllUsersVisible"
+                            {
+                            "Name" = "8:InstallAllUsersVisible"
+                            "DisplayName" = "8:#1059"
+                            "Description" = "8:#1159"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_2DE9230FBEA74F90AA8D9A1280700421"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:2"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CD907EE81D6F4D0DB8FB3BCC28C8D558"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:進行状況"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_6AFE930E58A84E90BD1AB90FAB486563"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4A8A2EA7719D416685FD618483343C66"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:完了"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_E1341CACD5C540959165CF54E785C5FA"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_FD538181EED04911A14C89A761D757A5"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3D85E35EDB144B07B6A530B56EB8AE00"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:進行状況"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        "MergeModule"
+        {
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_38D262D47D3F46D781A747FAA725E05D"
+            {
+            "UseDynamicProperties" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:C:\\Program Files (x86)\\Common Files\\CRforVS_mergemodules_13_0_27\\CRRuntime_13_0_27.msm"
+                "Properties"
+                {
+                    "ForceLargerFonts"
+                    {
+                    "Name" = "8:ForceLargerFonts"
+                    "DisplayName" = "8:ForceLargerFonts"
+                    "Description" = "8:Property to determine whether to use a larger font for PDF export. A value of 1 will force it, and a value of 0 (default) will default font."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:0"
+                    "DefaultValue" = "8:0"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallACT"
+                    {
+                    "Name" = "8:InstallACT"
+                    "DisplayName" = "8:InstallACT"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for PC databases. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallBTRIEVE"
+                    {
+                    "Name" = "8:InstallBTRIEVE"
+                    "DisplayName" = "8:InstallBTRIEVE"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Pervasive databases. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCDO32"
+                    {
+                    "Name" = "8:InstallCDO32"
+                    "DisplayName" = "8:InstallCDO32"
+                    "Description" = "8:Property to determine whether to install the Crystal Data Object database driver. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_ADO"
+                    {
+                    "Name" = "8:InstallCRDB_ADO"
+                    "DisplayName" = "8:InstallCRDB_ADO"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Microsoft ActiveX Data Objects. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_ADOPLUS"
+                    {
+                    "Name" = "8:InstallCRDB_ADOPLUS"
+                    "DisplayName" = "8:InstallCRDB_ADOPLUS"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Microsoft ADO.NET. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_CDO"
+                    {
+                    "Name" = "8:InstallCRDB_CDO"
+                    "DisplayName" = "8:InstallCRDB_CDO"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Crystal Data Object. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_COM"
+                    {
+                    "Name" = "8:InstallCRDB_COM"
+                    "DisplayName" = "8:InstallCRDB_COM"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for COM data provider. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_DATASET"
+                    {
+                    "Name" = "8:InstallCRDB_DATASET"
+                    "DisplayName" = "8:InstallCRDB_DATASET"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for DataSet provider. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_ODBC"
+                    {
+                    "Name" = "8:InstallCRDB_ODBC"
+                    "DisplayName" = "8:InstallCRDB_ODBC"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for ODBC. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_ORACLE"
+                    {
+                    "Name" = "8:InstallCRDB_ORACLE"
+                    "DisplayName" = "8:InstallCRDB_ORACLE"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Oracle. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallCRDB_QUERY"
+                    {
+                    "Name" = "8:InstallCRDB_QUERY"
+                    "DisplayName" = "8:InstallCRDB_QUERY"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Query Data. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallDAO"
+                    {
+                    "Name" = "8:InstallDAO"
+                    "DisplayName" = "8:InstallDAO"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Microsoft Data Access Objects. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallFIELDDEF"
+                    {
+                    "Name" = "8:InstallFIELDDEF"
+                    "DisplayName" = "8:InstallFIELDDEF"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Field Definitions. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallFILESYSTEM"
+                    {
+                    "Name" = "8:InstallFILESYSTEM"
+                    "DisplayName" = "8:InstallFILESYSTEM"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for File System data. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallIBM_DB2"
+                    {
+                    "Name" = "8:InstallIBM_DB2"
+                    "DisplayName" = "8:InstallIBM_DB2"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for DB2 Server. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallINFORMIX"
+                    {
+                    "Name" = "8:InstallINFORMIX"
+                    "DisplayName" = "8:InstallINFORMIX"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Informix Online Server. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2BBDE"
+                    {
+                    "Name" = "8:InstallP2BBDE"
+                    "DisplayName" = "8:InstallP2BBDE"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for IDAPI. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2BXBSE"
+                    {
+                    "Name" = "8:InstallP2BXBSE"
+                    "DisplayName" = "8:InstallP2BXBSE"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for xBase. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2IXBSE_DLL"
+                    {
+                    "Name" = "8:InstallP2IXBSE_DLL"
+                    "DisplayName" = "8:InstallP2IXBSE_DLL"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports physical database DLL for xBase. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SACL"
+                    {
+                    "Name" = "8:InstallP2SACL"
+                    "DisplayName" = "8:InstallP2SACL"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Public Folder ACL. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SEVT"
+                    {
+                    "Name" = "8:InstallP2SEVT"
+                    "DisplayName" = "8:InstallP2SEVT"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for NT Event Log. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SEXSR"
+                    {
+                    "Name" = "8:InstallP2SEXSR"
+                    "DisplayName" = "8:InstallP2SEXSR"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Exchange Server Admin. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SMAPI"
+                    {
+                    "Name" = "8:InstallP2SMAPI"
+                    "DisplayName" = "8:InstallP2SMAPI"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Exchange Folders and Address Book. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SMSIIS"
+                    {
+                    "Name" = "8:InstallP2SMSIIS"
+                    "DisplayName" = "8:InstallP2SMSIIS"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for IIS Log Files. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SOUTLK"
+                    {
+                    "Name" = "8:InstallP2SOUTLK"
+                    "DisplayName" = "8:InstallP2SOUTLK"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Outlook Data. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SREPL"
+                    {
+                    "Name" = "8:InstallP2SREPL"
+                    "DisplayName" = "8:InstallP2SREPL"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Exchange Public Folder Replica. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2STRACK"
+                    {
+                    "Name" = "8:InstallP2STRACK"
+                    "DisplayName" = "8:InstallP2STRACK"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Exchange Server Message Tracking Logs. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallP2SWBLG"
+                    {
+                    "Name" = "8:InstallP2SWBLG"
+                    "DisplayName" = "8:InstallP2SWBLG"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Web Log Files. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallSYBASE"
+                    {
+                    "Name" = "8:InstallSYBASE"
+                    "DisplayName" = "8:InstallSYBASE"
+                    "Description" = "8:Property to determine whether to install the Crystal Reports database driver for Sybase. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2DMAPI"
+                    {
+                    "Name" = "8:InstallU2DMAPI"
+                    "DisplayName" = "8:InstallU2DMAPI"
+                    "Description" = "8:Property to determine whether to install the export driver for MAPI Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2DNOTES"
+                    {
+                    "Name" = "8:InstallU2DNOTES"
+                    "DisplayName" = "8:InstallU2DNOTES"
+                    "Description" = "8:Property to determine whether to install the export driver for Lotus Notes Database Destination Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2DVIM"
+                    {
+                    "Name" = "8:InstallU2DVIM"
+                    "DisplayName" = "8:InstallU2DVIM"
+                    "Description" = "8:Property to determine whether to install the export driver for Export to Lotus Notes Mail Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FCR"
+                    {
+                    "Name" = "8:InstallU2FCR"
+                    "DisplayName" = "8:InstallU2FCR"
+                    "Description" = "8:Property to determine whether to install the export driver for Report Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FHTML"
+                    {
+                    "Name" = "8:InstallU2FHTML"
+                    "DisplayName" = "8:InstallU2FHTML"
+                    "Description" = "8:Property to determine whether to install the export driver for HTML 4.0 Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FODBC"
+                    {
+                    "Name" = "8:InstallU2FODBC"
+                    "DisplayName" = "8:InstallU2FODBC"
+                    "Description" = "8:Property to determine whether to install the export driver for ODBC Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FPDF"
+                    {
+                    "Name" = "8:InstallU2FPDF"
+                    "DisplayName" = "8:InstallU2FPDF"
+                    "Description" = "8:Property to determine whether to install the export driver for PDF Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FREC"
+                    {
+                    "Name" = "8:InstallU2FREC"
+                    "DisplayName" = "8:InstallU2FREC"
+                    "Description" = "8:Property to determine whether to install the export driver for Records Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FRTF"
+                    {
+                    "Name" = "8:InstallU2FRTF"
+                    "DisplayName" = "8:InstallU2FRTF"
+                    "Description" = "8:Property to determine whether to install the export driver for RTF Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FSEPV"
+                    {
+                    "Name" = "8:InstallU2FSEPV"
+                    "DisplayName" = "8:InstallU2FSEPV"
+                    "Description" = "8:Property to determine whether to install the export driver for Separated Export Values Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FTEXT"
+                    {
+                    "Name" = "8:InstallU2FTEXT"
+                    "DisplayName" = "8:InstallU2FTEXT"
+                    "Description" = "8:Property to determine whether to install the export driver for Text Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FWORDW"
+                    {
+                    "Name" = "8:InstallU2FWORDW"
+                    "DisplayName" = "8:InstallU2FWORDW"
+                    "Description" = "8:Property to determine whether to install the export driver for Word Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FXLS"
+                    {
+                    "Name" = "8:InstallU2FXLS"
+                    "DisplayName" = "8:InstallU2FXLS"
+                    "Description" = "8:Property to determine whether to install the export driver for Excel Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallU2FXML"
+                    {
+                    "Name" = "8:InstallU2FXML"
+                    "DisplayName" = "8:InstallU2FXML"
+                    "Description" = "8:Property to determine whether to install the export driver for XML Export Format. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "InstallWebViewer"
+                    {
+                    "Name" = "8:InstallWebViewer"
+                    "DisplayName" = "8:InstallWebViewer"
+                    "Description" = "8:Property to control if the Crystal Reports Viewer files is installed or not. A value of 1 (default) will install it, and a value of 0 will disable its installation."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:2"
+                    "Setting" = "3:1"
+                    "Value" = "8:1"
+                    "DefaultValue" = "8:1"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                    "PIDKEY"
+                    {
+                    "Name" = "8:PIDKEY"
+                    "DisplayName" = "8:Keycode"
+                    "Description" = "8:Value of a valid keycode to be used with the deployed runtime components."
+                    "Type" = "3:3"
+                    "ContextData" = "8:"
+                    "Attributes" = "3:0"
+                    "Setting" = "3:1"
+                    "Value" = "8:none"
+                    "DefaultValue" = "8:none"
+                    "UsePlugInResources" = "11:FALSE"
+                    }
+                }
+            "LanguageId" = "3:0"
+            "Exclude" = "11:FALSE"
+            "Folder" = "8:"
+            "Feature" = "8:"
+            "IsolateTo" = "8:"
+            }
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_4AC5E4603E074DCDBB4CD476F9A5CFDB"
+            {
+            "UseDynamicProperties" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:C:\\Program Files (x86)\\Common Files\\CRforVS_mergemodules_13_0_27\\CRRuntime_13_0_27_ja.msm"
+                "Properties"
+                {
+                }
+            "LanguageId" = "3:0"
+            "Exclude" = "11:FALSE"
+            "Folder" = "8:"
+            "Feature" = "8:"
+            "IsolateTo" = "8:"
+            }
+        }
+        "ProjectOutput"
+        {
+        }
+    }
+}

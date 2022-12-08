@@ -1,0 +1,40 @@
+DROP TABLE dbctr9999.FILE_CTL;
+CREATE TABLE dbctr9999.FILE_CTL (
+    FILE_ID varchar2(5) NOT NULL,
+    FILE_DIVID varchar2(3) NOT NULL,
+    SEND_FILE_NAME varchar2(32) NOT NULL,
+    SEND_FILE_LENGTH number(15,0) default 0  NOT NULL,
+    SEND_STS number(2,0) default 0  NOT NULL,
+    MAKE_OPENO varchar2(20),
+    MAKE_DATE number(8,0) default 0  NOT NULL,
+    MAKE_TIME number(9,0) default 0  NOT NULL,
+    SEND_DATE number(8,0) default 0  NOT NULL,
+    SEND_TIME number(9,0) default 0  NOT NULL,
+    CAP_FILE_NAME varchar2(32) NOT NULL,
+    CAP_FILE_LENGTH number(10,0) default 0  NOT NULL,
+    CAP_STS number(2,0) default 0  NOT NULL,
+    CAP_DATE number(8,0) default 0  NOT NULL,
+    CAP_TIME number(9,0) default 0  NOT NULL,
+CONSTRAINT PK_DBCTR9999_FILE_CTL PRIMARY KEY (
+     FILE_ID
+    ,FILE_DIVID
+    ,SEND_FILE_NAME
+    ,CAP_FILE_NAME
+));
+COMMENT ON TABLE dbctr9999.FILE_CTL IS 'ファイル集配信管理';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.FILE_ID IS 'ファイルID';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.FILE_DIVID IS 'ファイル識別区分';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.SEND_FILE_NAME IS '配信ファイル名';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.SEND_FILE_LENGTH IS '配信ファイルサイズ';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.SEND_STS IS '配信ファイル状態:0:ファイル作成 1:配信中 9:配信エラー 10:配信済';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.MAKE_OPENO IS '配信ファイル作成者ＩＤ:（yyyyMMdd)';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.MAKE_DATE IS '配信ファイル作成日:（yyyyMMdd)';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.MAKE_TIME IS '配信ファイル作成時刻:（hhmmssfff)';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.SEND_DATE IS '配信完了日:（yyyyMMdd)';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.SEND_TIME IS '配信完了時刻:（hhmmssfff)';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.CAP_FILE_NAME IS '取込ファイル名';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.CAP_FILE_LENGTH IS '取込ファイルサイズ';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.CAP_STS IS '取込状態:1:取込中 5:取込保留 9:取込エラー 10:取込完了';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.CAP_DATE IS '取込完了日:（yyyyMMdd)';
+COMMENT ON COLUMN dbctr9999.FILE_CTL.CAP_TIME IS '取込完了時刻:（hhmmssfff)';
+exit;

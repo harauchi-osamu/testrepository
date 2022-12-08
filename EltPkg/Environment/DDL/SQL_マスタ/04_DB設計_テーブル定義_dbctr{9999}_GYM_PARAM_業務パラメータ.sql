@@ -1,0 +1,5 @@
+DELETE FROM dbctr9999.GYM_PARAM;
+INSERT INTO dbctr9999.GYM_PARAM VALUES (0,'∑Æ≥¬≥','ã§í ','1');
+INSERT INTO dbctr9999.GYM_PARAM VALUES (1,'”¡¿ﬁº','éùèo','1');
+INSERT INTO dbctr9999.GYM_PARAM VALUES (2,'”¡∂¥ÿ','éùãA','1');
+exit;

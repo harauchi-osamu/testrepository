@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A88F0BC4-35FA-4B31-99F7-76A1DC9501F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ParamMaint</RootNamespace>
+    <AssemblyName>CTRParamMaint</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="GymParamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymParamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymParamReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymParamReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ItemManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainteForm.designer.cs">
+      <DependentUpon>MainteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GymParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GymParamForm.designer.cs">
+      <DependentUpon>GymParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DspSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DspSelectForm.designer.cs">
+      <DependentUpon>DspSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DspParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DspParamForm.designer.cs">
+      <DependentUpon>DspParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DspAdjustForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DspAdjustForm.designer.cs">
+      <DependentUpon>DspAdjustForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontDialog.designer.cs">
+      <DependentUpon>FontDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageParamForm.designer.cs">
+      <DependentUpon>ImageParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemMstDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemMstDialog.designer.cs">
+      <DependentUpon>ItemMstDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchGymDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchGymDialog.designer.cs">
+      <DependentUpon>SearchGymDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GymParamReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GymParamReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MainteForm.resx">
+      <DependentUpon>MainteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GymParamForm.resx">
+      <DependentUpon>GymParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DspSelectForm.resx">
+      <DependentUpon>DspSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DspParamForm.resx">
+      <DependentUpon>DspParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DspAdjustForm.resx">
+      <DependentUpon>DspAdjustForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FontDialog.resx">
+      <DependentUpon>FontDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageParamForm.resx">
+      <DependentUpon>ImageParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemMstDialog.resx">
+      <DependentUpon>ItemMstDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchGymDialog.resx">
+      <DependentUpon>SearchGymDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GymParamDataSet.xsc">
+      <DependentUpon>GymParamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GymParamDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymParamDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GymParamDataSet.xss">
+      <DependentUpon>GymParamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\98.共通\NCR\NCR\NCR.csproj">
+      <Project>{0b68a0d2-6ce9-4853-be0b-9bcc319fede8}</Project>
+      <Name>NCR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\98.共通\CommonClass\CommonClass.csproj">
+      <Project>{f295eca3-ff9a-4691-8421-2ff7969f7dea}</Project>
+      <Name>CommonClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\98.共通\CommonTable\CommonTable.csproj">
+      <Project>{479de026-aa33-40c6-8580-1fbff650bafa}</Project>
+      <Name>CommonTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\98.共通\Common\Log\Log.csproj">
+      <Project>{b0d3813a-1aa1-4f04-87a6-cc0abf527744}</Project>
+      <Name>Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\98.共通\EntryCommon\EntryCommon\EntryCommon.csproj">
+      <Project>{9a9a79bb-c9ea-465c-88e5-253b06157405}</Project>
+      <Name>EntryCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntryClass\EntryClass.csproj">
+      <Project>{DA6C470D-8073-4DEB-88E7-F9F2D5BB7991}</Project>
+      <Name>EntryClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

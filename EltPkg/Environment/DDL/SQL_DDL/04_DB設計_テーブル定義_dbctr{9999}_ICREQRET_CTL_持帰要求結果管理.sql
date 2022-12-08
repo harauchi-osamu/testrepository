@@ -1,0 +1,21 @@
+DROP TABLE dbctr9999.ICREQRET_CTL;
+CREATE TABLE dbctr9999.ICREQRET_CTL (
+    RET_REQ_TXT_NAME varchar2(32) NOT NULL,
+    MEI_TXT_NAME varchar2(32) NOT NULL,
+    CAP_KBN number(1,0) NOT NULL,
+    CAP_STS number(2,0) default 0  NOT NULL,
+    IMG_ARCH_NAME varchar2(32),
+    IMG_ARCH_CAP_STS number(2,0) default -1  NOT NULL,
+CONSTRAINT PK_DBCTR9999_ICREQRET_CTL PRIMARY KEY (
+     RET_REQ_TXT_NAME
+    ,MEI_TXT_NAME
+    ,CAP_KBN
+));
+COMMENT ON TABLE dbctr9999.ICREQRET_CTL IS '持帰要求結果管理';
+COMMENT ON COLUMN dbctr9999.ICREQRET_CTL.RET_REQ_TXT_NAME IS '要求結果テキストファイル名';
+COMMENT ON COLUMN dbctr9999.ICREQRET_CTL.MEI_TXT_NAME IS '証券明細テキストファイル名';
+COMMENT ON COLUMN dbctr9999.ICREQRET_CTL.CAP_KBN IS '取込区分:0：電子交換所 1：行内交換連携';
+COMMENT ON COLUMN dbctr9999.ICREQRET_CTL.CAP_STS IS '証券明細テキストファイル取込状態:0：未取込 5：ダウンロード確定待 10：ダウンロード確定済';
+COMMENT ON COLUMN dbctr9999.ICREQRET_CTL.IMG_ARCH_NAME IS 'イメージアーカイブ名:※イメージ要求否の場合はnull';
+COMMENT ON COLUMN dbctr9999.ICREQRET_CTL.IMG_ARCH_CAP_STS IS 'イメージアーカイブ取込状態:-1：対象外（要求対象外の場合） 0：未取込 1：OCR待 5：ダウンロード確定待 10：ダウンロード確定済';
+exit;

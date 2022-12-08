@@ -1,0 +1,18 @@
+DELETE FROM dbctr.BILLMF;
+INSERT INTO dbctr.BILLMF VALUES (101,'手形','約束手形','約束手形','');
+INSERT INTO dbctr.BILLMF VALUES (102,'手形','為替手形','為替手形','');
+INSERT INTO dbctr.BILLMF VALUES (201,'小切手','小切手','小切手','');
+INSERT INTO dbctr.BILLMF VALUES (202,'小切手','政府小切手','政小切手','');
+INSERT INTO dbctr.BILLMF VALUES (203,'小切手','欧文小切手','欧小切手','');
+INSERT INTO dbctr.BILLMF VALUES (204,'小切手','貯金小切手','貯小切手','');
+INSERT INTO dbctr.BILLMF VALUES (205,'小切手','振替小切手','振小切手','');
+INSERT INTO dbctr.BILLMF VALUES (301,'その他証券','配当金領収証（ゆうちょ）','配当(ゆ)','');
+INSERT INTO dbctr.BILLMF VALUES (302,'その他証券','配当金領収証（銀行）','配当(銀)','');
+INSERT INTO dbctr.BILLMF VALUES (303,'その他証券','定額小為替証書','定小為替','');
+INSERT INTO dbctr.BILLMF VALUES (304,'その他証券','普通為替証書','普通為替','');
+INSERT INTO dbctr.BILLMF VALUES (305,'その他証券','振替払出証書','振替払出','');
+INSERT INTO dbctr.BILLMF VALUES (306,'その他証券','銀行間領収証','銀行領収','');
+INSERT INTO dbctr.BILLMF VALUES (307,'その他証券','外国為替領収証','外為領収','');
+INSERT INTO dbctr.BILLMF VALUES (901,'その他証券','日銀小切手','日小切手','');
+INSERT INTO dbctr.BILLMF VALUES (999,'分類不能','分類不能','分類不能','');
+exit;

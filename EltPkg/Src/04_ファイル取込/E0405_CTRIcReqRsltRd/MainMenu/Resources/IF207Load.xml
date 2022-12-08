@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<IFLoadXMLData>
+  <RecordKBN KBN="1">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="ファイルID" Attr="C" Size="5" StartPos="2" />
+    <Item Name="ファイル識別区分" Attr="C" Size="3" StartPos="7" />
+    <Item Name="銀行コード" Attr="C" Size="4" StartPos="10" />
+    <Item Name="作成日" Attr="N" Size="8" StartPos="14" />
+    <Item Name="持帰要求テキストファイル名" Attr="C" Size="32" StartPos="22" />
+    <Item Name="ファイルチェック結果コード" Attr="C" Size="10" StartPos="54" />
+    <Item Name="交換希望日１" Attr="N" Size="8" StartPos="64" />
+    <Item Name="交換希望日２" Attr="N" Size="8" StartPos="72" />
+    <Item Name="交換証券種類コード" Attr="C" Size="3" StartPos="80" />
+    <Item Name="持帰対象区分" Attr="C" Size="1" StartPos="83" />
+    <Item Name="証券イメージ要否区分" Attr="C" Size="1" StartPos="84" />
+    <Item Name="ダミー１" Attr="C" Size="100" StartPos="85" />
+    <Item Name="処理結果コード" Attr="C" Size="10" StartPos="185" />
+    <Item Name="ダミー２" Attr="C" Size="26" StartPos="195" />
+  </RecordKBN>
+  <RecordKBN KBN="2">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="証券明細テキストファイル名" Attr="C" Size="32" StartPos="2" />
+    <Item Name="イメージアーカイブ名" Attr="C" Size="32" StartPos="34" />
+    <Item Name="ダミー" Attr="C" Size="155" StartPos="66" />
+  </RecordKBN>
+  <RecordKBN KBN="8">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="レコード件数" Attr="N" Size="8" StartPos="2" />
+    <Item Name="ダミー" Attr="C" Size="211" StartPos="10" />
+  </RecordKBN>
+  <RecordKBN KBN="9">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="ダミー" Attr="C" Size="219" StartPos="2" />
+  </RecordKBN>
+</IFLoadXMLData>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<IFLoadXMLData>
+  <RecordKBN KBN="1">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="ファイルID" Attr="C" Size="5" StartPos="2" />
+    <Item Name="ファイル識別区分" Attr="C" Size="3" StartPos="7" />
+    <Item Name="銀行コード" Attr="C" Size="4" StartPos="10" />
+    <Item Name="作成日" Attr="N" Size="8" StartPos="14" />
+    <Item Name="送信一連番号" Attr="C" Size="8" StartPos="22" />
+    <Item Name="ダミー" Attr="C" Size="571" StartPos="30" />
+  </RecordKBN>
+  <RecordKBN KBN="2">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="証券イメージファイル名" Attr="C" Size="62" StartPos="2" />
+    <Item Name="銀行コード訂正フラグ" Attr="C" Size="1" StartPos="64" />
+    <Item Name="訂正前銀行コード" Attr="C" Size="4" StartPos="65" />
+    <Item Name="訂正後銀行コード" Attr="C" Size="4" StartPos="69" />
+    <Item Name="交換希望日訂正フラグ" Attr="C" Size="1" StartPos="73" />
+    <Item Name="訂正前交換希望日" Attr="N" Size="8" StartPos="74" />
+    <Item Name="訂正後交換希望日" Attr="N" Size="8" StartPos="82" />
+    <Item Name="金額訂正フラグ" Attr="C" Size="1" StartPos="90" />
+    <Item Name="訂正前金額" Attr="N" Size="12" StartPos="91" />
+    <Item Name="訂正後金額" Attr="N" Size="12" StartPos="103" />
+    <Item Name="二重持出イメージファイル名" Attr="C" Size="62" StartPos="115" />
+    <Item Name="不渡返還登録区分" Attr="C" Size="1" StartPos="177" />
+    <Item Name="不渡返還区分１" Attr="C" Size="1" StartPos="178" />
+    <Item Name="0号不渡事由コード１" Attr="C" Size="2" StartPos="179" />
+    <Item Name="不渡返還区分２" Attr="C" Size="1" StartPos="181" />
+    <Item Name="0号不渡事由コード２" Attr="C" Size="2" StartPos="182" />
+    <Item Name="不渡返還区分３" Attr="C" Size="1" StartPos="184" />
+    <Item Name="0号不渡事由コード３" Attr="C" Size="2" StartPos="185" />
+    <Item Name="不渡返還区分４" Attr="C" Size="1" StartPos="187" />
+    <Item Name="0号不渡事由コード４" Attr="C" Size="2" StartPos="188" />
+    <Item Name="不渡返還区分５" Attr="C" Size="1" StartPos="190" />
+    <Item Name="0号不渡事由コード５" Attr="C" Size="2" StartPos="191" />
+    <Item Name="逆交換対象フラグ" Attr="C" Size="1" StartPos="193" />
+    <Item Name="ダミー" Attr="C" Size="407" StartPos="194" />
+  </RecordKBN>
+  <RecordKBN KBN="8">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="レコード件数" Attr="N" Size="8" StartPos="2" />
+    <Item Name="ダミー" Attr="C" Size="591" StartPos="10" />
+  </RecordKBN>
+  <RecordKBN KBN="9">
+    <Item Name="レコード区分" Attr="C" Size="1" StartPos="1" />
+    <Item Name="ダミー" Attr="C" Size="599" StartPos="2" />
+  </RecordKBN>
+</IFLoadXMLData>

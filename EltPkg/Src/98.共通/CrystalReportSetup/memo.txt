@@ -1,0 +1,6 @@
+■インストーラーに含まれるもの
+１．SAP Crystal Reports 13.0.27 runtime merge modules
+２．Runtime .NET Framework4.7.2（英語）
+３．Runtime .NET Framework4.7.2（日本語）
+４．Runtime Visual Studio 2015 Visual C++(x86)
+５．Runtime Visual Studio 2015 Visual C++(x64)

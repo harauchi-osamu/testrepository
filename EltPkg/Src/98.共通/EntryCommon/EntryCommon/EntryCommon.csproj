@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A9A79BB-C9EA-465C-88E5-253B06157405}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntryCommon</RootNamespace>
+    <AssemblyName>CTREntryCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AppInfo.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="CommonUtil.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="ControllerBase.cs" />
+    <Compile Include="DB\AdoAutoCommitTransaction.cs" />
+    <Compile Include="DB\AdoDatabaseProvider.cs" />
+    <Compile Include="DB\AdoNonCommitTransaction.cs" />
+    <Compile Include="DB\GenDbProviderFactory.cs" />
+    <Compile Include="EntryCommonDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntryCommonDialogBase.Designer.cs">
+      <DependentUpon>EntryCommonDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryReplacer.cs" />
+    <Compile Include="ExportData.cs" />
+    <Compile Include="FileGenerator.cs" />
+    <Compile Include="InclearingFileAccess.cs" />
+    <Compile Include="ImportTRAccessComp.cs" />
+    <Compile Include="ImportTRAccessCommon.cs" />
+    <Compile Include="ImportTRAccess.cs" />
+    <Compile Include="ImportFileAccess.cs" />
+    <Compile Include="ItemManagerBase.cs" />
+    <Compile Include="ManagerBase.cs" />
+    <Compile Include="MasterManager.cs" />
+    <Compile Include="ProcessManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EntryCommonFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntryCommonFormBase.Designer.cs">
+      <DependentUpon>EntryCommonFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPrint.cs" />
+    <Compile Include="ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EntryCommonDialogBase.resx">
+      <DependentUpon>EntryCommonDialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryCommonFormBase.resx">
+      <DependentUpon>EntryCommonFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommonClass\CommonClass.csproj">
+      <Project>{f295eca3-ff9a-4691-8421-2ff7969f7dea}</Project>
+      <Name>CommonClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonTable\CommonTable.csproj">
+      <Project>{479de026-aa33-40c6-8580-1fbff650bafa}</Project>
+      <Name>CommonTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Log\Log.csproj">
+      <Project>{b0d3813a-1aa1-4f04-87a6-cc0abf527744}</Project>
+      <Name>Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NCR\NCR\NCR.csproj">
+      <Project>{0b68a0d2-6ce9-4853-be0b-9bcc319fede8}</Project>
+      <Name>NCR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

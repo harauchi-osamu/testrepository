@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IIPReference.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserId1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbiip</Value>
+    </Setting>
+    <Setting Name="DataSource2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InitialCatalog1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbiip</Value>
+    </Setting>
+    <Setting Name="InitialCatalog2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserId2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsVisibleINVENTORY" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsVisibleNORMAL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsVisibleADDITION" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsVisibleTOTAL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsVisibleINCLEARING" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="opedate" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ErrLogFolderPath" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\fqctge08\e$\NCR_Dev\NCR\NCBDEV\OCRFoundation\Bin\LOG&lt;/string&gt;
+  &lt;string&gt;\\fqctge01\e$\NCR_Dev\NCR\NCBDEV\OCRFoundation\Bin\LOG&lt;/string&gt;
+  &lt;string&gt;\\fqctge04\e$\NCR_Dev\NCR\NCBDEV\OCRFoundation\Bin\LOG&lt;/string&gt;
+  &lt;string&gt;\\fqctge11\e$\NCR_Dev\NCR\NCBDEV\OCRFoundation\Bin\LOG&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DataSource1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bofdev</Value>
+    </Setting>
+    <Setting Name="DISPENV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">【BOF】開発環境</Value>
+    </Setting>
+    <Setting Name="OcrFoundationTerm" Type="System.String" Scope="User">
+      <Value Profile="(Default)">172_20_0_100|172_20_0_101|10_98_180_180|10_98_180_183</Value>
+    </Setting>
+    <Setting Name="OcrFoundationGoki" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1号機|2号機|3号機|4号機</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

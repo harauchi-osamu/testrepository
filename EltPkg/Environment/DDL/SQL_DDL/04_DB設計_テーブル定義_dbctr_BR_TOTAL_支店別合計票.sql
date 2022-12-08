@@ -1,0 +1,33 @@
+DROP TABLE dbctr.BR_TOTAL;
+CREATE TABLE dbctr.BR_TOTAL (
+    GYM_ID number(3,0) NOT NULL,
+    OPERATION_DATE number(8,0) NOT NULL,
+    SCAN_IMG_FLNM varchar2(100) NOT NULL,
+    IMPORT_IMG_FLNM varchar2(62),
+    BK_NO number(4,0) default -1  NOT NULL,
+    BR_NO number(4,0) default -1  NOT NULL,
+    SCAN_DATE number(8,0) default 0  NOT NULL,
+    SCAN_BR_NO number(4,0) default -1  NOT NULL,
+    TOTAL_COUNT number(6,0) default 0  NOT NULL,
+    TOTAL_AMOUNT number(18,0) default 0  NOT NULL,
+    STATUS number(1,0) default 0  NOT NULL,
+    LOCK_TERM varchar2(20),
+CONSTRAINT PK_DBCTR_BR_TOTAL PRIMARY KEY (
+     GYM_ID
+    ,OPERATION_DATE
+    ,SCAN_IMG_FLNM
+));
+COMMENT ON TABLE dbctr.BR_TOTAL IS '支店別合計票';
+COMMENT ON COLUMN dbctr.BR_TOTAL.GYM_ID IS '業務番号';
+COMMENT ON COLUMN dbctr.BR_TOTAL.OPERATION_DATE IS '処理日';
+COMMENT ON COLUMN dbctr.BR_TOTAL.SCAN_IMG_FLNM IS 'スキャンイメージファイル名';
+COMMENT ON COLUMN dbctr.BR_TOTAL.IMPORT_IMG_FLNM IS '取込後イメージファイル名';
+COMMENT ON COLUMN dbctr.BR_TOTAL.BK_NO IS '持出銀行';
+COMMENT ON COLUMN dbctr.BR_TOTAL.BR_NO IS '持出支店';
+COMMENT ON COLUMN dbctr.BR_TOTAL.SCAN_DATE IS 'スキャン日';
+COMMENT ON COLUMN dbctr.BR_TOTAL.SCAN_BR_NO IS 'スキャン支店';
+COMMENT ON COLUMN dbctr.BR_TOTAL.TOTAL_COUNT IS '総枚数';
+COMMENT ON COLUMN dbctr.BR_TOTAL.TOTAL_AMOUNT IS '総金額';
+COMMENT ON COLUMN dbctr.BR_TOTAL.STATUS IS '状態:1:処理待 2:処理中 3:処理済 5:保留 9:削除';
+COMMENT ON COLUMN dbctr.BR_TOTAL.LOCK_TERM IS 'ロック:イメージ取込の入力画面を開いているコンピューター名称 TERM.initより設定';
+exit;

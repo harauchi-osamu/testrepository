@@ -1,0 +1,7 @@
+DELETE FROM dbctr.ERA;
+INSERT INTO dbctr.ERA VALUES (1,'ñæé°','ñæ','Meiji','M',1867,18680101,19120729);
+INSERT INTO dbctr.ERA VALUES (2,'ëÂê≥','ëÂ','Taisyo','T',1911,19120730,19261224);
+INSERT INTO dbctr.ERA VALUES (3,'è∫òa','è∫','Showa','S',1925,19261225,19890107);
+INSERT INTO dbctr.ERA VALUES (4,'ïΩê¨','ïΩ','Heisei','H',1988,19890108,20190430);
+INSERT INTO dbctr.ERA VALUES (5,'óﬂòa','óﬂ','Reiwa','R',2018,20190501,99991231);
+exit;

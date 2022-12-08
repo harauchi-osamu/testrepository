@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CrystalReportSetup", "CrystalReportSetup\CrystalReportSetup.vdproj", "{E2381576-5BEA-4E96-A096-0B939FF5DF47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2381576-5BEA-4E96-A096-0B939FF5DF47}.Debug|Default.ActiveCfg = Debug
+		{E2381576-5BEA-4E96-A096-0B939FF5DF47}.Debug|Default.Build.0 = Debug
+		{E2381576-5BEA-4E96-A096-0B939FF5DF47}.Release|Default.ActiveCfg = Release
+		{E2381576-5BEA-4E96-A096-0B939FF5DF47}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA20B41D-E57D-446A-9BBC-9F999B357458}
+	EndGlobalSection
+EndGlobal

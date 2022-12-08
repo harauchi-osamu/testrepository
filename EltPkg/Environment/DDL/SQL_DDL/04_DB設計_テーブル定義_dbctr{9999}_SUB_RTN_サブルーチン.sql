@@ -1,0 +1,14 @@
+DROP TABLE dbctr9999.SUB_RTN;
+CREATE TABLE dbctr9999.SUB_RTN (
+    SUB_KBN number(1,0) NOT NULL,
+    SUB_SUB varchar2(10) NOT NULL,
+    SUB_VALUE varchar2(30),
+ CONSTRAINT PK_DBCTR9999_SUB_RTN PRIMARY KEY (
+     SUB_KBN
+    ,SUB_SUB
+));
+COMMENT ON TABLE dbctr9999.SUB_RTN IS 'サブルーチン';
+COMMENT ON COLUMN dbctr9999.SUB_RTN.SUB_KBN IS 'サブルーチン種類:1：項目入力チェック 2：項目入力値読替';
+COMMENT ON COLUMN dbctr9999.SUB_RTN.SUB_SUB IS 'サブルーチン名:サブルーチン名';
+COMMENT ON COLUMN dbctr9999.SUB_RTN.SUB_VALUE IS 'チェックバリュー値:チェックバリュー値';
+exit;

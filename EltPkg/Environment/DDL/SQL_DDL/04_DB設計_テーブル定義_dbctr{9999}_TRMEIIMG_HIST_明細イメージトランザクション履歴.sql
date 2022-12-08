@@ -1,0 +1,73 @@
+DROP TABLE dbctr9999.TRMEIIMG_HIST;
+CREATE TABLE dbctr9999.TRMEIIMG_HIST (
+    GYM_ID number(3,0) NOT NULL,
+    OPERATION_DATE number(8,0) NOT NULL,
+    SCAN_TERM varchar2(20) NOT NULL,
+    BAT_ID number(6,0) NOT NULL,
+    DETAILS_NO number(6,0) NOT NULL,
+    IMG_KBN number(2,0) NOT NULL,
+    SEQ number(3,0) NOT NULL,
+    IMG_FLNM varchar2(62),
+    IMG_FLNM_OLD varchar2(100),
+    OC_OC_BK_NO varchar2(4),
+    OC_OC_BR_NO varchar2(4),
+    OC_IC_BK_NO varchar2(4),
+    OC_OC_DATE varchar2(8),
+    OC_CLEARING_DATE varchar2(8),
+    OC_AMOUNT varchar2(12),
+    PAY_KBN varchar2(1),
+    UNIQUE_CODE varchar2(15),
+    FILE_EXTENSION varchar2(4),
+    BUA_STS number(2,0) NOT NULL,
+    BUB_CONFIRMDATE number(8,0) NOT NULL,
+    BUA_DATE number(8,0) NOT NULL,
+    BUA_TIME number(6,0) NOT NULL,
+    GDA_DATE number(8,0) NOT NULL,
+    GDA_TIME number(6,0) NOT NULL,
+    IMG_ARCH_NAME varchar2(32),
+    DELETE_DATE number(8,0) default 0  NOT NULL,
+    DELETE_FLG number(1,0) default 0  NOT NULL,
+    UPDATE_DATE number(8,0) NOT NULL,
+    UPDATE_TIME number(9,0) NOT NULL,
+    UPDATE_KBN number(1,0) NOT NULL,
+ CONSTRAINT PK_DBCTR9999_TRMEIIMG_HIST PRIMARY KEY (
+     GYM_ID
+    ,OPERATION_DATE
+    ,SCAN_TERM
+    ,BAT_ID
+    ,DETAILS_NO
+    ,IMG_KBN
+    ,SEQ
+));
+COMMENT ON TABLE dbctr9999.TRMEIIMG_HIST IS '明細イメージトランザクション履歴';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.GYM_ID IS '業務番号';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OPERATION_DATE IS '処理日';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.SCAN_TERM IS 'イメージ取込端末';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.BAT_ID IS 'バッチ番号';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.DETAILS_NO IS '明細番号';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.IMG_KBN IS '表裏等の別:01:表 02:裏 03:補箋 04:付箋 05:入金証明 06:表（再送分） 07:裏（再送分） 08～10:その他';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.SEQ IS '出力連番';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.IMG_FLNM IS '証券イメージファイル名';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.IMG_FLNM_OLD IS 'スキャン連携時ファイル名';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OC_OC_BK_NO IS '(持出ファイル名要素)持出銀行コード:前ゼロ埋め';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OC_OC_BR_NO IS '(持出ファイル名要素)持出支店コード:前ゼロ埋め 省略値可';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OC_IC_BK_NO IS '(持出ファイル名要素)持帰銀行コード:前ゼロ埋め 省略値可';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OC_OC_DATE IS '(持出ファイル名要素)持出日:イメージ取込日';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OC_CLEARING_DATE IS '(持出ファイル名要素)交換希望日:補正確定値 ・交換希望日を西暦8桁(YYYYMMDD形式)でセットする。 ・交換日前営業日の9:30以降～交換日当日の8:30の間は省略が可能。（省略値参照）それ以外の期間での持出の場合は、交換希望日のセットが必須。';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.OC_AMOUNT IS '(持出ファイル名要素)金額:前ゼロ埋め 省略値可';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.PAY_KBN IS '(持出ファイル名要素)決済対象区分:0:決済対象 1:決済対象外';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.UNIQUE_CODE IS '(持出ファイル名要素)一意コード:イメージ取込にて確定 持出銀行側で一意となる値をセットする。';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.FILE_EXTENSION IS '(持出ファイル名要素)拡張子:".jpg"';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.BUA_STS IS '持出アップロード状態(持出):0：未作成 1：ファイル作成 9：ファイル作成エラー 10：アップロード 19：結果エラー 20：結果正常';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.BUB_CONFIRMDATE IS '持出アップロード確定日(持出)';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.BUA_DATE IS '持出日(持出)';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.BUA_TIME IS '持出時間(持出)';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.GDA_DATE IS '(持帰)持帰取込日';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.GDA_TIME IS '持帰取込時間(持帰)';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.IMG_ARCH_NAME IS 'イメージアーカイブファイル名(共通)';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.DELETE_DATE IS '削除日';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.DELETE_FLG IS '削除フラグ:0：未削除 1：削除済';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.UPDATE_DATE IS '更新日:更新システム日付';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.UPDATE_TIME IS '更新時間:更新システム時刻';
+COMMENT ON COLUMN dbctr9999.TRMEIIMG_HIST.UPDATE_KBN IS '更新区分:1：新規登録 2：アップデート';
+exit;
